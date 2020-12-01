@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="img/logos/bull.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+	 crossorigin="anonymous">
+</head>
+<header id="main">
+<div class="container-fluid navbar-fixed-top">
+	<div class="pull-left logo parallelogram">
+		<a href=""><img src="img/logos/unnamed11.png"></a>
+	</div>
+	<div class="header fixed-top" >
+			<div class="header_body">
+		<div class="header_burger">
+			<span></span>
+		</div>
+		<nav class="header_menu" >
+			<ul class="header_list">
+				<li onmouseover="big(this)" onmouseout="small(this)"><a href="#main">ГЛАВНАЯ</a></li>
+				<li onmouseover="big(this)" onmouseout="small(this)"><a href="#shop">МАГАЗИН</a></li>
+				<li onmouseover="big(this)" onmouseout="small(this)"><a href="#gallery">ГАЛЕРЕЯ</a></li>
+				<li onmouseover="big(this)" onmouseout="small(this)"><a href="#price">ПРАЙС</a></li>
+				<li onmouseover="big(this)" onmouseout="small(this)"><a href="#about_us">О НАС</a></li>
+        <li onmouseover="big(this)" onmouseout="small(this)"><a href="#contacts">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>	
+	</div>
+	</div>
+	</div>
+</header>
+
+<body>
+	<div class="slider-item1">
+		<img src="img/sliders/para.jpeg">
+		<span class="slider-text1">
+			<h3 class="slide-zag1"id="parallelogram1">ЛУЧШЕЕ</h3>
+			<p  class="slide-desc1"id="square">ДЛЯ ВАШЕГО ТЕЛА И ДУШИ</p>
+			<p class="slide-desc22">При покупке абономента на 2  месяца, третий месяц в подарок!</p>
+			<button onclick="popup()"  class="btn1">Консультация</button>
+		</span>	
+	</div>
+
+	<div class="wrapper">
+	<div class="slider">
+	<div class="slider-item">
+		<img src="img/sliders/mainphoto.jpg">	
+		<span class="slider-text">
+			<h3 class="slide-zag" id="parallelogram1">ЛУЧШЕЕ</h3>
+			<p  class="slide-desc" id="square">ДЛЯ ВАШЕГО ТЕЛА И ДУШИ</p>
+			<p class="slide-desc2">Грамотно подобранная программа - верный путь к идеальному телу!</p>
+			<button onclick="popup()" class="btn" type="button">УЗНАТЬ БОЛЬШЕ</button>
+		</span>	
+		
+	</div>
+	<div class="slider-item">
+		<img src="img/sliders/main0.png">
+		<span class="slider-text">
+			<h3 class="slide-zag"id="parallelogram1">ЛУЧШЕЕ</h3>
+			<p  class="slide-desc"id="square">ДЛЯ ВАШЕГО ТЕЛА И ДУШИ</p>
+			<p class="slide-desc2">Грамотно подобранная программа - верный путь к идеальному телу!</p>
+			<button onclick="popup()"  class="btn">УЗНАТЬ БОЛЬШЕ</button>
+		</span>	
+	</div>
+	<div class="slider-item">
+		<img src="img/sliders/para.jpeg">
+		<span class="slider-text">
+			<h3 class="slide-zag"id="parallelogram1">ЛУЧШЕЕ</h3>
+			<p  class="slide-desc"id="square">ДЛЯ ВАШЕГО ТЕЛА И ДУШИ</p>
+			<p class="slide-desc2" style="margin-right: 30px;">При покупке абономента на 2  месяца, третий месяц в подарок!</p>
+			<button onclick="popup()"  class="btn" style="margin-left: 40px;">УЗНАТЬ БОЛЬШЕ</button>
+		</span>	
+	</div>
+
+	<div class="slider-item">
+		<img src="img/sliders/main1.png">
+		<span class="slider-text third-slider">
+			<h3 class="slide-zag third-slider"
+			id="parallelogram1">ЛУЧШЕЕ</h3>
+			<p class="slide-desc" id="square">ДЛЯ ВАШЕГО ТЕЛА И ДУШИ</p>
+			<p class="slide-desc2">Грамотно подобранная программа - верный путь к идеальному телу!</p>
+			<button onclick="popup()" class="btn">УЗНАТЬ БОЛЬШЕ</button>
+		</span>	
+	</div>
+	</div>
+       </div>
+
+       <div class="popup">
+		<div class="popup-content">
+			<img onclick="close_popup()" class="close" src="img/closed.png" alt="close" width="6%;">
+			<img id="logobull" src="img/logos/logobull.png" style="width: 30%;">
+			<form  method="post" class="subscription">
+			<input id="name" type="name" name="Name" placeholder="Ваше Имя" required>
+			<input id="email" type="Email" name="Email" placeholder="Ваш email" required>
+		 	<input id="num" type="num" name="num" placeholder="Ваш телефон" required>
+		 	<p class="subscription-message">* Получить консультацию</p>
+		 	<button id="message" class="btn" type="submit">Отправить</button>
+		 </form>
+		</div>
+	</div> 
+
+	
+
+     <div class="main" id="gallery">
+     	<div class="round">
+     		<img id="img1" src="img/zal/trenzal.jpg">
+     		<span class="imgtext">TRAINING GYM</span>
+     	</div>
+     <div class="round">
+     		<img src="img/zal/group.jpg">
+     		<span class="imgtext">GROUP TRAING <br> HALL</span>
+     	</div>
+     	<div class="round">
+     		<img src="img/zal/bar.jpg">
+	  		<span class="imgtext">FITNESS BAR</span>
+     	</div>
+     	<div class="round">
+     		<img src="img/zal/fittrainers.png">
+     		<span class="imgtext">TRAINERS</span>
+     	</div>
+     	<div class="round">
+     		<img src="img/zal/cardio.jpg">
+     		<span class="imgtext">CARDIO ROOM</span>
+     	</div>
+     </div>
+
+     <div class="middle">
+     	<div class="container">
+     	<div class="welcome">
+     		<img src="img/withgant.jpg">
+     	</div>
+     	<div class="welcometext">
+     		<h2><b>ДОБРО ПОЖАЛОВАТЬ В<span style="color: #ef173c"> POWER GYM</span></b></h2>
+     		<div class="row"><br>
+     			<div class="col-xs-12">
+     				<div class="icon-style about-box">
+     			<a class="text-center" href="">
+     				<i class="icon icon-bg"><img src="img/icons/gantel.png"></i>
+     			</a>
+     			<div class="details">
+     				<h4 class="mb-5">
+     					<span class="title">
+     						Многолетний 
+     						<span class="color-theme" style="color: #ff2400;"> Опыт</span>
+     					</span>	
+     				</h4>
+     				<p>Работаем на рынке с 2012 года, но уже успели завоевать популярность среди людей с активной жизненной позицией, занимающихся собственным развитием и совершенствованием.</p>
+     			</div>
+     		</div>
+     	</div>
+
+     	<div class="col-xs-12">
+     				<div class="icon-style about-box">
+     			<a class="text-center" href="">
+     				<i class="icon icon-bg fas fa-users" style='font-size:48px;color:#000;'></i></i>
+     			</a>
+     			<div class="details">
+     				<h4 class="mb-5">
+     					<span class="title">
+     						Высококвалифицированные 
+     						<span class="color-theme" style="color: #ff2400;"> тренера</span>
+     					</span>	
+     				</h4>
+     				<p>Тренера "Power Gym" всегда в курсе новейших фитнес-технологий и знают, как добиться максимальной эффективности в каждом занятии.</p>
+     			</div>
+     		</div>
+     	</div>
+
+     	<div class="col-xs-12">
+     				<div class="icon-style about-box">
+     			<a class="text-center" href="">
+     				<i class="icon icon-bg far fa-clock" style="color: black"> </i>
+     			</a>
+     			<div class="details">
+     				<h4 class="mb-5">
+     					<span class="title">
+     						Групповые  
+     						<span class="color-theme" style="color: #ff2400;"> занятия</span>
+     					</span>	
+     				</h4>
+     				<p>Групповые тренировки в Power Gym – это уникальный комплекс различных направлений занятий спортом в группах. У нас Вы найдете самые разнообразные виды групповых занятий, которые можете совмещать!</p>
+     		</div>
+     		   </div>
+     	</div>
+     </div>
+   </div>
+  </div> 
+</div>
+
+    
+       <h2 class="sub" style="font-weight: 600; text-align: center;">
+         Наши <span style="color: #ff2400;">
+            абонементы
+         </span>
+       </h2>
+	<div class="card " id="price">
+  <div class="product-item">
+  <img src="img/wcoach.png">
+  <div class="product-list">
+  <h3>В ГРУППЕ (С ТРЕНЕРОМ)</h3> 
+  <span class="price">22 000 KZT</span>
+  <a href="" class="button"><b>ВЫБРАТЬ</b></a>
+  </div>
+  </div>
+
+  <div class="product-item">
+  <img src="img/withcoach.jpg">
+  <div class="product-list">
+  <h3>В ГРУППЕ (БЕЗ ТРЕНЕРА)</h3>
+  <span class="price">10 000 KZT</span>
+  <a href="" class="button"><b>ВЫБРАТЬ</b></a>
+  </div>
+  </div>
+
+<div class="product-item">
+  <img src="img/singlewc.jpg">
+  <div class="product-list">
+    <h3>С ТРЕНЕРОМ</h3>
+      <span class="price">30 000 KZT</span>
+      <a href="" class="button"><b>ВЫБРАТЬ</b></a>
+  </div>
+</div>
+
+<div class="product-item">
+  <img src="img/single.jpg">
+  <div class="product-list">
+    <h3>ИНДИВИДУАЛЬНО</h3>
+      <span class="price">15 000 KZT</span>
+      <a href="" class="button"><b>ВЫБРАТЬ</b></a>
+  </div>
+</div>
+	</div>
+ 
+	 <div class="footer" id="contacts">
+    <div class="container">
+        
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <ul class="contact">
+            <li><i class="fa fa-map-marker"></i>
+              <span>г. Каскелен, ул. Карасай Батыра, 2/52</span></li>
+            <li><i class="fa fa-phone"></i>
+              <span><a href="tel:+77471307700">+ 7 747 130 77 00</a></span></li>
+            <li><i class="fa fa-phone"></i>
+              <a href="tel:+77471307700">+7 778 410 89 32</a>
+            </li>
+          </ul>
+        </div>
+         <div id="map">
+     </div>
+      
+      <div class="col-md-2 col-sm-6 col-xs-12">
+          <span class="footer_title">
+            <h3>Обратная связь</h3>
+          </span>
+      <form  method="post" class="subscriptions">
+      <input id="names" type="name" name="Name" placeholder="Ваше Имя" required>
+      <input id="emails" type="Email" name="Email" placeholder="Ваш email" required>
+      <input id="nums" type="num" name="num" placeholder="Ваш телефон" required>
+      <p class="subscription-message">* Получить консультацию</p>
+      <button id="messages" class="btn" type="submit">Отправить</button>
+     </form>
+        </div>
+     
+    </div>
+  </div>
+      <img onclick="popup()" src="img/logos/unnamed11.png" id="fixedbutton">
+		
+     
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="js/slick.min.js"></script>
+     <script src="js/script.js"></script>
+     <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: 43.199629, lng: 76.626527 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 18,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+     <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap">
+</script>
+     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
